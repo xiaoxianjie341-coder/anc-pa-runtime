@@ -1,13 +1,24 @@
-# ANC-PA: Enterprise Personal Agent Runtime for AI-Native Organizations
-> **面向 AI-Native Company 的企业级 Personal Agent（个人智能体）协同运行时平台**  
-> 对标安克创新 800+ PA 组织演进架构，基于飞书原生环境打造的“一人一专属 Bot”与多智能体跨部门协作底座。
+<div align="center">
+
+# 🚀 ANC-PA Runtime (AI-Native Company Personal Agent)
+### 企业级 AI 原生组织协同运行时平台 · 规范驱动工程 (Spec-Driven Architecture)
+
+<p align="center">
+  <strong>对标安克创新 800+ PA 全员智能体架构 ｜ 基于飞书原生长连接的“一人一专属分身”协同运行时</strong>
+</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Architecture: Org-as-Code](https://img.shields.io/badge/Architecture-Org--as--Code-orange.svg)](#-核心架构理念-org-as-code)
-[![Runtime: Feishu-Native](https://img.shields.io/badge/Runtime-Feishu--Native-00d6b9.svg)](#-接入与协同交互)
+[![Spec: RFC-Standard](https://img.shields.io/badge/SPEC-Spec--Driven%20Engineering-orange.svg)](SPEC.md)
+[![Runtime: Feishu-Native](https://img.shields.io/badge/Runtime-Feishu--WebSocket-00d6b9.svg)](#-交互层飞书原生协同)
 [![Knowledge: Zero--Token--Vault](https://img.shields.io/badge/Knowledge-Zero--Token--Vault-success.svg)](#-零-token-共享知识库-markdown-vault)
+[![Engineering: Dual--Sandbox](https://img.shields.io/badge/Sandbox-Docker%20%2B%20Playwright-purple.svg)](#-双环境计算沙箱)
+
+[📖 系统工程规范 (SPEC.md)](SPEC.md) · [🏛️ 架构设计全览 (M1-DESIGN)](docs/M1-DESIGN.md) · [🔬 研发调研路线 (RESEARCH)](docs/RESEARCH.md) · [💡 快速上手](#-快速上手与本地调试-quick-start)
+
+</div>
 
 ---
+
 
 ## 📌 项目立项与核心背景 (Background & Problem)
 
@@ -62,6 +73,19 @@
 
 ---
 
+
+## 📐 规范驱动工程体系 (Spec-Driven Development)
+
+本项目严格遵循业界最高标准的 **Spec-Driven Architecture（规范驱动架构）**，所有功能实现均有完备的 RFC 规格与生产级验证基准：
+
+| 规范文档 | 核心定位与技术涵盖 |
+| :--- | :--- |
+| **[📄 核心架构规范 (SPEC.md)](SPEC.md)** | **全系统核心宪章**。包含 6 条设计原则（P1~P6）、 Member 与 Bot 关系模型、CWD 家目录中枢、四层软件架构（Gateway / Harness / Vault / Org）与生命周期状态机。 |
+| **[🏛️ 运行时架构深度设计 (M1-DESIGN.md)](docs/M1-DESIGN.md)** | **工程实施裁决**。涵盖长连接事件路由器、群文件捕获 Sidecar、多模型 Provider 熔断降级与飞书原生卡片回调设计。 |
+| **[🔬 竞品与开源技术调研 (RESEARCH.md)](docs/RESEARCH.md)** | **技术选型裁决依据**。对比 Coze、Dify、OpenClaw、WorkBuddy 与自研 Gateway 的性能、Token 成本及权限边界。 |
+| **[📋 演进里程碑计划 (PLAN.md)](docs/PLAN.md)** | 阶段交付路线图。从 M0（纯文件系统闭环）到 M4（自进化主动性评估）的完整落地节拍。 |
+
+---
 ## ⚡ 核心架构亮点 (Core Engineering Highlights)
 
 ### 1. 组织即代码 (Org-as-Code)
