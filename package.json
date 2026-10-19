@@ -1,0 +1,16 @@
+{
+  "name": "anc-pa-runtime",
+  "version": "1.0.0",
+  "description": "Enterprise Personal Agent Runtime for AI-Native Organizations",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:gateway": "node dist/runtime/gateway.js"
+  },
+  "keywords": ["ai-agent", "feishu", "personal-agent", "ai-native", "runtime"],
+  "author": "肖贤杰 (xiaoxianjie)",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}

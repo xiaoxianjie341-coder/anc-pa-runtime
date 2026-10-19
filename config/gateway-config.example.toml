@@ -1,0 +1,25 @@
+# ANC-PA 网关与组织映射配置
+language = "zh"
+data_dir = "./data"
+
+[gateway]
+provider = "feishu"
+mode = "websocket" # 官方长连接模式，免公网 IP
+
+[[projects]]
+name = "enterprise-pa-hub"
+
+[projects.agent]
+type = "codex"
+work_dir = "./agent"
+mode = "suggest" # 敏感操作提示审批
+
+[[projects.platforms]]
+type = "feishu"
+
+[projects.platforms.options]
+app_id = "cli_your_feishu_app_id"
+app_secret = "your_feishu_app_secret"
+allow_from = "ou_all_authorized_staff" # 员工白名单授权
+enable_feishu_card = true # 启用原生交互卡片
+group_chat_history_share = true # 启用群聊上下文静默捕获
