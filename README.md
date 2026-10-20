@@ -20,6 +20,12 @@
 ---
 
 
+
+> [!NOTE]
+> 📖 **架构规范与系统实现 (Specification & RFC)**：  
+> 本系统采用**规范驱动工程 (Spec-Driven Architecture)** 研发。完整系统架构规范详见 **[👉 SPEC.md (系统架构规范主线)](./SPEC.md)**，运行时深度工程设计详见 **[🏛️ M1-DESIGN.md](./docs/M1-DESIGN.md)**，竞品与开源技术选型依据详见 **[🔬 RESEARCH.md](./docs/RESEARCH.md)**，里程碑计划见 **[📋 PLAN.md](./docs/PLAN.md)**。
+
+
 ## 📌 项目立项与核心背景 (Background & Problem)
 
 传统中大型企业在推行 AI 落地时，普遍陷入两大致命困境：
